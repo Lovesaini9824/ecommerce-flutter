@@ -14,7 +14,7 @@ class ApiService {
     if (Platform.isAndroid) {
       return const bool.fromEnvironment('dart.vm.product')
           ? 'http://10.0.2.2:5000/api'     // Emulator
-          : 'http://192.168.1.66:5000/api'; // Real Device
+          : 'http://192.0.1.1:5000/api'; // Real Device
     }
     return 'http://192.168.1.66:5000/api'; // Fallback
   }
